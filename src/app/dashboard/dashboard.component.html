@@ -1,0 +1,15 @@
+<div class="display_container">
+    <div id="header">
+        <h4>Top Heroes</h4>
+    </div>
+
+    <div class="heroes_container">
+        <a class="hero_blocks" *ngFor="let hero of heroes" (click)="onSelect(hero)" routerLink='/detail/{{hero.id}}'>
+
+          {{hero.name}}
+
+        </a>
+    </div>
+</div>
+
+<app-hero-search></app-hero-search>

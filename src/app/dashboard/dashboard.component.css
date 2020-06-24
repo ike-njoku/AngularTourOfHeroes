@@ -1,0 +1,29 @@
+.display_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header header" "HC HC HC HC HC";
+}
+
+#header {
+    grid-area: header;
+}
+
+.heroes_container {
+    grid-area: HC;
+    /* embed the hero links into the  heroes container */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+}
+
+.hero_blocks {
+    text-align: center;
+    background-color: darkcyan;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.hero_blocks:hover {
+    color: white;
+}

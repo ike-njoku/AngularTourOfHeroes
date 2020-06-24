@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+    padding: 5px;
+    background-color: darkcyan;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    background-color: aqua;
+    margin: 1px;
+}
+
+.header a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+
+a :active {
+    color: white;
+    background-color: cadetblue;
+}
+
+@media (max-width:3px) {
+    .header {
+        padding: 3px;
+    }
+}

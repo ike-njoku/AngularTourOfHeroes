@@ -1,0 +1,21 @@
+<ng-container *ngIf="hero; else hero_not_found">
+    <div class="hero_detail">
+        <button (click)="goBack()"> go back</button>
+        <div>
+            <h1> {{hero.name|uppercase}} Details </h1>
+        </div>
+        <label> Edit Hero
+          <input [(ngModel)]="hero.name" placeholder=" {{hero.name}} ">
+        </label>
+
+        <button (click)="save()"> Save Changes</button>
+    </div>
+</ng-container>
+
+
+<ng-template #hero_not_found>
+    <div>
+        <h2>Hero noot found!!!</h2>
+
+    </div>
+</ng-template>

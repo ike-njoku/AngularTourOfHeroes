@@ -1,0 +1,40 @@
+ul {
+    margin-left: -40px;
+}
+
+li {
+    font-size: x-large;
+    padding: 0px 0px 0px;
+    margin-bottom: 5px;
+    background-color: cadetblue;
+    list-style-type: none;
+}
+
+li span {
+    padding: 0px 8px;
+    background-color: aqua;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+li :hover {
+    padding: 5px;
+}
+
+.heroes_list {
+    grid-area: heroes_list;
+}
+
+.deleteButton {
+    float: right;
+    background-color: aqua;
+    border: none;
+    margin: 5px 5px;
+}
+
+.deleteButton :hover {
+    margin: 0px;
+}
